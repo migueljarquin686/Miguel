@@ -1,0 +1,57 @@
+﻿using System;
+using System.Linq;
+
+namespace Compra_del_cliente
+{
+	public static class Program
+	{
+		public static void Main()
+		{
+			string Nombre;
+		    float Producto;
+Console.WriteLine("Sea bienvenido, ingrese su nombre >");
+Nombre=(Console.ReadLine());
+Console.WriteLine("Ingrese la cantidad de productos que va a comprar");
+Producto=float.Parse(Console.ReadLine());
+Console.WriteLine("_________Resivo_________");
+if(Producto<30)
+{
+	if(Producto>=1)
+	{
+	Console.WriteLine("Cliente: "+Nombre);
+	Console.WriteLine("Total productos: "+Producto);
+	Console.WriteLine("Usted debe pagar en efectivo");
+	}
+}
+
+if(Producto>=30)
+{
+	if(Producto<60)
+	{
+	Console.WriteLine("Cliente: "+Nombre);
+	Console.WriteLine("Total productos: "+Producto);
+	Console.WriteLine("Usted debe pagar con tarjeta");
+	}
+}
+
+if(Producto>=60)
+{
+Console.WriteLine("Cliente: "+Nombre);
+Console.WriteLine("Total productos: "+ Producto);
+Console.WriteLine("Usted debe pagar con cheque");
+}
+//Este algoritmo le pide al usuario que
+//ingrese su nombre posterior a eso le pide
+//que ingrese la cantidad de productos a
+//comprar en caso que la cantidad de productos
+//sea menor a 30 mostrara que debe pagar en
+//efectivo, si es mayor a 30 y menor que 60
+//pagar con tarjeta y por ultimo si es mayor 
+//que 60 debe pagar con cheque.
+//...
+//Este algoritmo fue diseñado con la aplicacion
+//de C# en el telefono apoyada en github para 
+//subir mi URL de la tarea.
+		}
+	}
+}
