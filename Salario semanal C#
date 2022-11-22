@@ -1,0 +1,58 @@
+﻿using System;
+using System.Linq;
+
+namespace Salario_semanal
+{
+	public static class Program
+	{
+		public static void Main()
+		{
+			float Horas, SH, Salario_Total, Extras, Agregados, Neto;
+			string Nombre;
+			Console.WriteLine("Ingrese su nombre");
+			Nombre=(Console.ReadLine());
+			
+            Console.WriteLine("Ingrese el total de horas que trabajo esta semana");
+	     	Horas=float.Parse(Console.ReadLine());
+	     	
+            Console.WriteLine("Ingrese el salario que le pagan por hora");
+            SH=float.Parse(Console.ReadLine());
+            
+            if(Horas>0)
+            {
+            	if(SH>0)
+            	{
+            		Salario_Total= Horas*SH;
+            		Console.WriteLine("_______________RESULTADOS_______________");
+            		Console.WriteLine("Nombre: "+Nombre);
+            		Console.WriteLine("Salario: "+Salario_Total+" $");
+            		if(Horas>48)
+            {
+            	    Extras=Horas-48;
+            	    Agregados=SH*Extras;
+            	    Neto=Agregados+Salario_Total;
+            			Console.WriteLine("Horas extras: "+Extras);
+                        Console.WriteLine("Pago de horas extras: "+Agregados);
+                        Console.WriteLine("Salario Neto: "+Neto+" $");
+            	}
+            
+            	
+              }
+       
+           }
+           //Este algoritmo te pide tu nombre
+           //tus horas trabajadas en la semana y 
+           //tambien a cuanto te pagan la hora que
+           //trabajas ya con eso el algoritmo te 
+           //calcula tu salario por semana y tambien
+           //el total de horas extras tomando como
+           //referencia las 48 horas de trabajo semanal
+           //y te muestra esos resultados.
+           //...
+           //Este algoritmo se diseño con la aplicacion
+           //de C# en el telefono apoyandose en github 
+           //para obtener un correo.
+         
+	    }
+    }
+}
