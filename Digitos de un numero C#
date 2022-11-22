@@ -1,0 +1,48 @@
+﻿using System;
+using System.Linq;
+
+namespace Digitos_de_un_numero
+{
+	public static class Program
+	{
+		public static void Main()
+		{
+		 float Num;
+Console.WriteLine("Ingrese un numero positivo >");
+Num=float.Parse(Console.ReadLine());
+
+
+if(Num<10)
+{
+	Console.WriteLine("El numero tiene un digito");
+}
+
+if(Num>=10)
+{
+	if(Num<100)
+	{
+		Console.WriteLine("El numero tiene dos digitos");
+	}
+	else
+	{
+		Console.WriteLine("El numero no tiene ni un digito ni dos digitos");
+	}
+}
+//Este algoritmo le dice al usuario que ingrese un
+//numero y con ese numero el algoritmo realiza un
+//proceso que consiste en que si el numero es menor
+//que 10 entonces mostrara que el numero tiene solo un 
+//digito y si el numero es mayor o igual a 10 y 
+//tambien si es menor que 100 entoces mostrar que 
+//el numero tiene dos digitos y en caso contrario que
+//no tenga dos digitos ni tampoco uno mostrara que el
+//numero no tiene ni un digito ni dos digitos.
+//...
+//Este programa fue diseñado con la aplicacion de 
+//C# en el telefono y se apoyo para subir esta tarea 
+//repositorios en github.
+
+
+		}
+	}
+}
